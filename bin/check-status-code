@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Usage:
+# URL="http://example.com" check-status-code
+# URL="http://example.com" STATUS=200 check-status-code
+# URL="http://example.com" STATUS=301 check-status-code
+
+RESPONSE_STATUS=$(curl --write-out "%{http_code}\n" --silent --insecure --output /dev/null $URL)
+echo $RESPONSE_STATUS
+
+if [ $RESPONSE_STATUS == ${STATUS:-200} ] ; then
+	echo "OK"
+    exit 0
+else
+	echo "FAIL"
+	exit 1
+fi
