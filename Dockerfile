@@ -9,7 +9,7 @@ RUN chmod -R 700 /usr/local/bin/
 
 # Apt utils
 RUN apt-get update \
-	&& apt-get install -y --no-install-recommends apt-utils
+	&& apt-get install -y apt-utils
 
 # ssh2
 RUN apt-get install -y \
