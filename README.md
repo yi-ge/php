@@ -2,6 +2,70 @@
 
 Fork https://hub.docker.com/r/phpdocker/phpdocker/, remove MariaDB、Redis、Node.js，update php to 7.3。
 
+# Images Modules
+```
+[PHP Modules]
+apcu
+bcmath
+bz2
+calendar
+Core
+ctype
+curl
+date
+dom
+exif
+fileinfo
+filter
+ftp
+gd
+gettext
+gmp
+hash
+iconv
+intl
+json
+libxml
+mbstring
+memcached
+mysqli
+mysqlnd
+openssl
+pcre
+PDO
+pdo_mysql
+pdo_sqlite
+Phar
+posix
+readline
+redis
+Reflection
+session
+SimpleXML
+soap
+sockets
+sodium
+SPL
+sqlite3
+ssh2
+standard
+sysvmsg
+sysvsem
+sysvshm
+tokenizer
+xdebug
+xml
+xmlreader
+xmlrpc
+xmlwriter
+xsl
+zip
+zlib
+
+[Zend Modules]
+Xdebug
+```
+
 ## PHP 7.3 Official Images Modules
 
 Many extensions are already compiled into the `Official Images`.
