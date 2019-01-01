@@ -45,8 +45,15 @@ zlib
 
 ## Usage
 
-* Docker image is available at [Docker Hub](https://hub.docker.com/r/phpdocker/phpdocker/).
-* The primary goal of this Docker image is custom image for CI, but you can use it like you want.
+DockerHub:
+```
+docker pull wy373226722/php:7.3
+```
+
+中国：
+```
+docker pull registry.cn-shenzhen.aliyuncs.com/yi-ge/php:7.3
+```
 
 ## Example
 
