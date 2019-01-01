@@ -15,9 +15,16 @@ RUN apt-get update \
 RUN apt-get install -y \
 	libssh2-1-dev
 
+RUN wget https://pecl.php.net/get/ssh2-1.1.2.tgz \
+	&& tar xzvf ssh2-1.1.2.tgz \
+	&& cd ssh2-1.1.2 \
+	&& /usr/local/php/bin/phpize \
+	&& ./configure --with-php-config=/usr/local/bin/php-config --with-ssh2 \
+	&& make -j 64 \
+	&& make install
+
 # PECL
 RUN docker-php-pecl-install \
-	ssh2-1.1.2 \
 	redis-4.2.0 \
 	apcu-5.1.16 \
 	memcached-3.1.3
