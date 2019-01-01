@@ -19,7 +19,7 @@ RUN wget https://pecl.php.net/get/ssh2-1.1.2.tgz \
 	&& tar xzvf ssh2-1.1.2.tgz \
 	&& cd ssh2-1.1.2 \
 	&& phpize \
-	&& ./configure --with-php-config=/usr/local/bin/php-config --with-ssh2 \
+	&& ./configure --with-php-config=/usr/local/bin/php-config \
 	&& make -j 64 \
 	&& make install
 
