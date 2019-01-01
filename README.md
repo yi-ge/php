@@ -55,6 +55,15 @@ docker pull wy373226722/php:7.3
 docker pull registry.cn-shenzhen.aliyuncs.com/yi-ge/php:7.3
 ```
 
+## Run
+
+Example:
+```
+docker run -itd --name php -v /www:/www -w /www -p 9000:9000 wy373226722/php:7.3
+```
+
+You can run it use [rancher](https://github.com/rancher/rancher) or [portainer](https://github.com/portainer/portainer).
+
 ## Example
 
 * [Shippable CI](https://bitbucket.org/hranicka/composer-sandbox/src/master/shippable.yml?at=master&fileviewer=file-view-default) custom container
