@@ -2,6 +2,8 @@
 
 Fork https://hub.docker.com/r/phpdocker/phpdocker/, remove MariaDB、Redis、Node.js，update php to 7.3。
 
+Blog post: [https://www.wyr.me/post/604](https://www.wyr.me/post/604)
+
 # Images Modules
 ```
 [PHP Modules]
